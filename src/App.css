@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body, html {
+  background: rgb(250,255,253);
+  background: radial-gradient(circle, rgba(250,255,253,1) 0%, rgba(204,255,237,1) 41%, rgba(255,255,255,1) 100%);
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App { 
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.section {
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.68);
+  padding: 60px;
+}
+
+.section h1 {
+  font-size: 2em;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #19192b;
+}
+
+@media screen and (max-width: 706px) {
+  .section {
+    background-color: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+}
